@@ -1,0 +1,466 @@
+:root{
+
+    --primary-color: red;
+    --dark-bg: #121212;
+
+}
+
+
+* {
+    margin: 0;
+    
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--primary-color) var(--dark-bg);
+}
+
+
+.logo {
+    display: flex;
+    font-family: 'Metal Mania', cursive;
+  font-size: 52px;
+  color: #e60000;
+  text-shadow: 3px 3px 0 black;
+  justify-content: center;
+}
+    
+.img-logo {
+
+  width: 100px;
+  height: auto;
+}
+
+
+
+.header__content{
+gap: 15rem;
+background: rgb(245, 242, 242);
+color: #0b0b0f;
+position: fixed;
+top: 0%;
+left: 0;
+width: 100%;
+z-index: 1000;
+
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 25px;
+    cursor: default;
+    border-radius: 5px;
+
+
+    
+}
+
+.menu-toggle:hover{
+    background: #ff0000;
+}
+
+span{
+    color: red;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b0b0f;
+    color: #f5f5f5;
+    line-height: 1.5;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 5rem;
+    margin: 15px;
+    
+}
+
+nav a {
+    
+    display: flex;
+    flex-direction: column;
+    color: #e40808;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight:bold;
+    
+    
+   
+}
+
+
+
+nav a:hover{
+    color: rgb(29, 20, 20);
+    font-style: italic;
+    font-size: xx-large;
+    
+}
+li{
+    list-style: none;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
+    display: block;
+}
+
+
+a{
+    text-decoration: none;
+    color: #0b0b0f;
+    font-size: 20px;
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #f30a0a);
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    
+    
+}
+
+.btn:hover {
+    background: #0d0d0d;
+ 
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 8px rgba(255, 0, 60, 0.4);
+}
+
+ 
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 3rem 0;
+}
+
+ h2, h3 {
+    margin-bottom: 1rem;
+    font-family: monospace;
+    
+}
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
+    display: flex;
+    height: 100vh;
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    
+}
+.contenido {
+    border: #f5f5f5 1px solid;
+    border-radius: 15px;
+    height: 45px;
+    background: #f5f5f5a2;
+    color: #0b0b0f;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    width: 3000px;
+    height: 200px;
+    text-align: center;
+}
+.contenido h2{
+    padding: 16px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+.contenido p {
+    padding: 15px;
+    margin: 12px;
+    text-align: justify;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+
+.media__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    border-radius: 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #ff0000;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+th,td:hover{
+    background: #ff0000;
+}
+
+button{
+    background: #ff0000;
+    height: 50px;
+    width: 80px;
+    border-radius: 15px;
+    color: #f5f5f5;
+    font-family: monospace;
+}
+
+.card {
+    display: grid;
+    background: rgb(235, 225, 225);
+    padding: 0;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    border: #df0b0b 2px solid;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+/* Puedes usar esto si quieres centrar contenido */
+/* .container {
+    margin: 0 auto;
+ */
+
+.footer {
+    background: #0d0d0d;
+    color: #fff;
+    padding: 40px 20px;
+    border-top: 2px solid #1f1f1f;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Texto */
+.footer p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #aaa;
+}
+
+/* Lista social */
+.social {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.social li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover elegante */
+.social li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #ff3c3c; /* rojo estilo rock */
+    transition: width 0.3s ease;
+}
+
+.social li a:hover {
+    color: #ff3c3c;
+}
+
+.social li a:hover::after {
+    width: 100%;
+}
+.media {
+    padding: 4rem 0;
+}
+
+.media h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.media__grid {
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.media__grid img {
+    border: #df0b0b 2px solid ;
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el mouse */
+.media__grid img:hover {
+    border: #cfcbcb 4px solid;
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/*abaout*/
+
+/* Fondo general */
+.about {
+    background: #0d0d0d;
+    color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Título principal */
+.about h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ff2e2e;
+    margin-bottom: 30px;
+}
+
+/* Contenido */
+.about__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Texto */
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Subtítulo */
+.about h3 {
+    color: #ff2e2e;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Lista */
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    margin: 8px 0;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Icono tipo rock */
+.about ul li::before {
+    content: "⚡";
+    color: #ff2e2e;
+    margin-right: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        background: black; 
+        text-align: center;
+        padding: 20px 0;
+
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav.active {
+        transform: translateY(0);
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
